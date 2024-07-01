@@ -1,0 +1,22 @@
+[package]
+name = "authentification"
+version = "0.1.4"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+data_models = { path = "../data_models" }
+db_manager = { path = "../db_manager" }
+hmac = "0.12.1"
+sha2 = "0.10.8"
+jwt = "0.16.0"
+rand = "0.8.5"
+password-hash = "0.5.0"
+hex = { version = "0.4.3", features = [] }
+chrono = "0.4.35"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+once_cell  = "1.19.0"
+dotenv = "0.15.0"
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
